@@ -28,7 +28,7 @@ node_modules/
 .env
 .env.*
 *.db
-# .bob/mcp.json
+.bob/mcp.json
 .vscode
 .DS_Store
 custom-ibm-bob-intro-workshop-template.code-workspace
