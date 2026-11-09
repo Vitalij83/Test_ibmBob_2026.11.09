@@ -1,0 +1,13 @@
+{
+  "name": "lab-3-resilient-service",
+  "version": "1.0.0",
+  "description": "Lab 3 – Resilient Express microservice with rate limiting",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "IBM Bob Lab 1 Calculator — Vue 3 + Electron desktop app",
   "author": "IBM Bob Workshop",
-  "main": "electron/main.cjs",
+  "main": "electron/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -31,10 +31,14 @@
     "asar": false,
     "files": [
       "dist/**/*",
-      "electron/**/*"
+      "electron/**/*",
+      "public/**/*"
     ],
     "win": {
-      "target": "nsis",
+      "target": [
+        "nsis",
+        "portable"
+      ],
       "icon": "public/icon.ico"
     },
     "nsis": {
@@ -42,7 +46,8 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Lab 1 Calculator"
+      "shortcutName": "Lab 1 Calculator",
+      "runAfterFinish": false
     }
   }
 }

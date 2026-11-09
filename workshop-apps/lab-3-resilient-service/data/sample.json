@@ -1,0 +1,5 @@
+[
+  { "id": "1", "name": "Auth Service",         "status": "operational" },
+  { "id": "2", "name": "Inventory Service",    "status": "degraded"    },
+  { "id": "3", "name": "Notification Service", "status": "operational" }
+]
