@@ -35,3 +35,13 @@ custom-ibm-bob-intro-workshop-template.code-workspace
 # Task history: keep only the README
 task-history/*
 !task-history/README.md
+
+# Electron build output (contains large binaries > 100 MB)
+workshop-apps/**/release/
+workshop-apps/**/dist/
+*.exe
+*.blockmap
+*.bin
+*.dll
+*.pak
+*.dat
